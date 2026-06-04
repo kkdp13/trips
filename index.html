@@ -83,7 +83,9 @@
   </div>
 
   <div class="mapwrap"><div id="bigmap"></div></div>
-  <div class="map-cap">🗺️ แผนที่รวมทุกจุด — กดหมุดเพื่อดูชื่อและเปิด Google Maps</div>
+  <div class="map-cap">🗺️ แผนที่รวมทุกจุด — กดหมุดเพื่อดูชื่อและเปิด Google Maps<br>
+  <a href="#" id="diagbtn" style="color:#1d6a8c;font-size:12px">🔧 ทดสอบโหลดรูป (กดถ้ารูปไม่ขึ้น)</a>
+  <div id="diag" style="font-size:12px;margin-top:6px;color:#6b7785"></div></div>
 
   <nav id="nav"></nav>
   <div id="content"></div>
@@ -518,11 +520,17 @@ const TRIP = {
     const wiki = slot.dataset.wiki, photos = slot.dataset.photos;
     const fb = `<a class="c-imgfallback" href="${photos}" target="_blank" rel="noopener"><span>🖼️</span><b>กดดูรูปใน Google</b></a>`;
     if(!wiki){ slot.innerHTML = fb; return; }
+    // ใช้ MediaWiki API พร้อม origin=* (รองรับ CORS เรียกจากเว็บอื่นได้)
+    const api = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*'
+      + '&prop=pageimages&piprop=thumbnail&pithumbsize=600&redirects=1&titles='
+      + encodeURIComponent(wiki);
     try{
-      const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(wiki));
+      const r = await fetch(api);
       if(!r.ok) throw 0;
       const d = await r.json();
-      const src = (d.thumbnail&&d.thumbnail.source) || (d.originalimage&&d.originalimage.source);
+      const pages = d.query && d.query.pages;
+      let src = null;
+      if(pages){ for(const k in pages){ if(pages[k].thumbnail){ src = pages[k].thumbnail.source; break; } } }
       if(!src) throw 0;
       const img = new Image();
       img.className='c-img'; img.alt=wiki; img.referrerPolicy='no-referrer';
@@ -531,7 +539,9 @@ const TRIP = {
       img.src = src;
     }catch(e){ slot.innerHTML = fb; }
   }
-  document.querySelectorAll('.c-imgslot').forEach(loadImg);
+  // โหลดทีละน้อยกันยิงพร้อมกัน 37 จุด
+  const slots = [...document.querySelectorAll('.c-imgslot')];
+  (async()=>{ for(const s of slots){ loadImg(s); await new Promise(r=>setTimeout(r,120)); } })();
 
   // แผนที่ Leaflet รวมทุกหมุด
   const map=L.map('bigmap').setView([-33.87,151.21],11);
@@ -544,6 +554,23 @@ const TRIP = {
     grp.push([m.lat,m.lng]);
   });
   if(grp.length)map.fitBounds(grp,{padding:[40,40]});
+
+  // ── ตัวช่วยดีบั๊ก: ทดสอบว่า Wikipedia API เรียกได้ไหม ──
+  document.getElementById('diagbtn').addEventListener('click', async (e)=>{
+    e.preventDefault();
+    const out = document.getElementById('diag');
+    out.textContent = '⏳ กำลังทดสอบเรียก Wikipedia...';
+    try{
+      const r = await fetch('https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=400&titles=Sydney_Opera_House');
+      if(!r.ok){ out.innerHTML='❌ เรียก API ไม่ได้ (HTTP '+r.status+') — เน็ตอาจบล็อก Wikipedia'; return; }
+      const d = await r.json();
+      const p = d.query.pages;
+      let src=null; for(const k in p){ if(p[k].thumbnail) src=p[k].thumbnail.source; }
+      if(src){ out.innerHTML='✅ Wikipedia ใช้ได้! รูปควรขึ้นปกติ ลอง refresh หน้า<br><img src="'+src+'" style="height:60px;border-radius:6px;margin-top:4px">'; }
+      else { out.innerHTML='⚠️ เรียก API ได้ แต่ไม่พบรูป (โครงสร้างข้อมูลอาจเปลี่ยน)'; }
+    }catch(err){ out.innerHTML='❌ ถูกบล็อก (CORS/เน็ต): '+err.message+'<br>เน็ตที่ใช้อาจบล็อก Wikipedia ลองเปลี่ยนเน็ต/ปิด VPN'; }
+  });
+
 </script>
 </body>
 </html>
