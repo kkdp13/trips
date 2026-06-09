@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ทริปครอบครัวซิดนีย์ · กรกฎาคม 2026</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
 <style>
   /* ฟอนต์ไทยฝังในตัว (ไม่ต้องพึ่งเน็ต) */
   @font-face{font-family:'Sarabun';font-style:normal;font-weight:400;font-display:swap;src:url(data:font/woff2;base64,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) format('woff2');}
@@ -64,6 +64,28 @@
   .btn-map{background:var(--sea);color:#fff}.btn-map:hover{background:var(--sea-deep)}
   .btn-pic{background:#fff;color:var(--coral);border:1.5px solid var(--coral)}.btn-pic:hover{background:var(--coral);color:#fff}
 
+
+  /* แท็บสลับมุมมอง */
+  .tabs{display:flex;gap:8px;margin:24px 0 4px;justify-content:center}
+  .tab{font-family:'Sarabun',sans-serif;font-size:15px;font-weight:700;padding:10px 22px;border-radius:30px;border:2px solid var(--sea);background:#fff;color:var(--sea);cursor:pointer;transition:.2s}
+  .tab.active{background:var(--sea);color:#fff}
+  /* แผน 13 วัน */
+  .day{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:16px;overflow:hidden;box-shadow:0 3px 12px rgba(15,66,88,.05)}
+  .day-head{background:linear-gradient(135deg,var(--sea-deep),var(--sea));color:#fff;padding:14px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .day-num{background:rgba(255,255,255,.2);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;flex-shrink:0;font-family:'Chonburi',serif}
+  .day-title{font-weight:700;font-size:16px;flex:1;min-width:140px}
+  .day-date{font-size:13px;opacity:.9}
+  .day-tag{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:20px;background:rgba(255,255,255,.25)}
+  .day-tag.ไฮไลต์{background:var(--coral)}
+  .day-body{padding:8px 18px 14px}
+  .item{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .item:last-child{border-bottom:none}
+  .item-t{font-weight:700;color:var(--sea);font-size:13px;min-width:48px;flex-shrink:0;padding-top:1px}
+  .item-a{font-size:14px;font-weight:600}
+  .item-n{font-size:12.5px;color:var(--muted)}
+  .day-note{background:var(--paper);border-radius:10px;padding:10px 12px;margin-top:8px;font-size:12.5px;color:#5a6b54;border-left:3px solid var(--gold)}
+  .day-note b{color:var(--ink)}
+  .view{display:none}.view.active{display:block}
   footer{margin-top:48px;text-align:center;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:24px}
   footer b{color:var(--ink)}
 </style>
@@ -82,13 +104,19 @@
     <p><b>วิธีใช้:</b> แผนที่ด้านล่างรวมทุกจุด กดหมุดดูได้ · แต่ละการ์ดมีรูป + ปุ่ม <b>📍 แผนที่</b> (เปิด Google Maps เห็นรีวิว+เส้นทาง) และ <b>🖼️ ดูรูป</b> · ถ้ารูปไหนไม่ขึ้น กดช่องรูปเพื่อดูใน Google ได้</p>
   </div>
 
+  <div class="tabs">
+    <button class="tab active" data-view="plan">📅 แผน 13 วัน</button>
+    <button class="tab" data-view="explore">📋 รวมทุกจุด</button>
+  </div>
+  <div id="view-plan" class="view active"><div id="planbox"></div></div>
+  <div id="view-explore" class="view">
   <div class="mapwrap"><div id="bigmap"></div></div>
-  <div class="map-cap">🗺️ แผนที่รวมทุกจุด — กดหมุดเพื่อดูชื่อและเปิด Google Maps<br>
-  <a href="#" id="diagbtn" style="color:#1d6a8c;font-size:12px">🔧 ทดสอบโหลดรูป (กดถ้ารูปไม่ขึ้น)</a>
-  <div id="diag" style="font-size:12px;margin-top:6px;color:#6b7785"></div></div>
+  <div class="map-cap">🗺️ แผนที่รวมทุกจุด — กดหมุดเพื่อดูชื่อและเปิด Google Maps</div>
 
   <nav id="nav"></nav>
   <div id="content"></div>
+
+  </div><!-- /view-explore -->
 
   <footer>
     <p>📋 รวม <b id="total">—</b> จุด · จัดทำเป็นข้อมูลประกอบการเลือก</p>
@@ -96,9 +124,128 @@
   </footer>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>// ข้อมูลสถานที่ทั้งหมดในซิดนีย์ — สำหรับครอบครัว 6 คน (เด็ก 5 + 9 ขวบ) ก.ค. 2026
-const TRIP = {
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>const PLAN = [
+  { day:1, date:"16 ก.ค. (พฤ)", title:"ถึงซิดนีย์ — เก็บแรง", tag:"เบา",
+    items:[
+      {t:"19:20", a:"เครื่องลงสนามบินซิดนีย์ (SYD)", n:"ผ่าน ตม. รับกระเป๋า ~1 ชม."},
+      {t:"21:00", a:"เข้าที่พัก เช็คอิน พักผ่อน", n:"หาของกินใกล้ๆ ที่พัก คืนแรกไม่ต้องฝืน"}
+    ], note:"เที่ยวบินถึงเย็น คืนนี้พักเอาแรงก่อน พรุ่งนี้ค่อยเริ่ม"},
+
+  { day:2, date:"17 ก.ค. (ศ)", title:"หัวใจซิดนีย์ — Opera House & The Rocks", tag:"ปานกลาง",
+    items:[
+      {t:"10:00", a:"Circular Quay + Sydney Opera House", n:"เดินถ่ายรูป ไม่ต้องรีบ"},
+      {t:"11:30", a:"Royal Botanic Garden", n:"เดินชิล วิว Mrs Macquarie's Chair"},
+      {t:"13:00", a:"มื้อเที่ยง + Gelato Messina แวะของหวาน", n:""},
+      {t:"14:30", a:"The Rocks + ตลาด The Rocks Market (ศุกร์-อาทิตย์)", n:"ย่านเก่าใต้สะพาน"},
+      {t:"16:00", a:"คาเฟ่: Lune Croissanterie (ครัวซองต์ระดับโลก)", n:"แวะของหวาน/กาแฟช่วงบ่าย"},
+      {t:"18:00", a:"มื้อค่ำ: Pancakes on the Rocks", n:"เด็กชอบ เปิดดึก"}
+    ], note:"วันแรกเที่ยวเบาๆ ทุกจุดเดินถึงกันรอบ Circular Quay"},
+
+  { day:3, date:"18 ก.ค. (ส)", title:"🐋 ดูปลาวาฬ + Darling Harbour", tag:"ไฮไลต์",
+    items:[
+      {t:"10:00", a:"🐋 Go Whale Watching ออกเรือ (จอง 3 ชม.)", n:"กินยาแก้เมาก่อน! พีคซีซั่น โอกาสเจอ 95%+"},
+      {t:"13:30", a:"มื้อเที่ยงแถว Darling Harbour", n:"เรือเทียบท่าแถวนี้พอดี"},
+      {t:"15:00", a:"SEA LIFE Aquarium หรือ WILD LIFE Zoo", n:"เลือกตามใจเด็ก อยู่ติดกัน"},
+      {t:"17:00", a:"เดินเล่นริมน้ำ + ของหวาน: Koi Dessert Bar (Chippendale)", n:"ขนมระดับศิลปะ จากเชฟ MasterChef"},
+      {t:"18:30", a:"มื้อค่ำ: Jordon's Seafood (Darling Harbour)", n:"⭐4.6 ซีฟู้ดขึ้นชื่อ ปลาย่างทั้งตัว หอยนางรม squid ink linguine วิวอ่าว"}
+    ], note:"ทัวร์ปลาวาฬเสาร์คนเยอะ จองล่วงหน้า! เด็กเมาเรือเตรียมยา"},
+
+  { day:4, date:"19 ก.ค. (อา)", title:"🚤 เรือปิกนิกไฟฟ้า + Maritime Museum", tag:"ไฮไลต์",
+    items:[
+      {t:"10:00", a:"🚤 GoBoat — เรือปิกนิกไฟฟ้าขับเอง (จอง 2-3 ชม.)", n:"⭐4.9 ไม่ต้องมีใบขับขี่ เอาอาหารขึ้นเรือ ปิกนิกชมวิวอ่าว · จองล่วงหน้า คนขับ 18+"},
+      {t:"12:30", a:"ปิกนิกบนเรือ / จอดอ่าวเงียบๆ", n:"เตรียมอาหาร+น้ำแข็งไปเอง (ซื้อแถวมารีน่าก่อนได้)"},
+      {t:"14:00", a:"คืนเรือ พักผ่อน", n:""},
+      {t:"15:00", a:"Australian National Maritime Museum (Darling Harbour)", n:"ขึ้นเรือดำน้ำจริง HMAS Onslow เด็กผู้ชายชอบ"},
+      {t:"16:30", a:"ของหวาน: Black Star Pastry (เค้กแตงโม)", n:"เค้กแตงโมสตรอว์เบอร์รี่ระดับโลก เด็กผู้หญิงชอบ"},
+      {t:"18:00", a:"มื้อค่ำ: Fratelli Fresh (Darling Harbour)", n:"อิตาเลียน พิซซ่าเตาฟืน พาสต้า เด็กกินง่าย บรรยากาศดี"}
+    ], note:"วันสายเรือ + ปิกนิก unique กว่าสวนสัตว์ · GoBoat ออกจาก The Spit (Mosman) จองออนไลน์ก่อนไป"},
+
+  { day:5, date:"20 ก.ค. (จ)", title:"พิพิธภัณฑ์ไดโนเสาร์ + ช้อปปิ้ง", tag:"เบา",
+    items:[
+      {t:"10:30", a:"Australian Museum (ไดโนเสาร์)", n:"เข้าฟรี เด็กชอบมาก โซนเด็กใหญ่"},
+      {t:"13:00", a:"มื้อเที่ยงย่าน CBD", n:""},
+      {t:"14:30", a:"Queen Victoria Building (QVB) ช้อปปิ้ง", n:"ห้างสวย คาเฟ่เยอะ"},
+      {t:"16:00", a:"Paddy's Markets ของฝาก + โซน jewelry", n:"น่าสนใจสำหรับร้านเครื่องประดับ"},
+      {t:"18:00", a:"มื้อค่ำ: Bornga Korean BBQ (Haymarket)", n:"⭐4.7 ปิ้งย่างเกาหลีเชฟ Paik Jong-won วากิวเด็ด ใกล้ Paddy's เปิด 16:00"}
+    ], note:"วันสบายๆ ในร่มเยอะ เผื่อวันฝนตกสลับได้"},
+
+  { day:6, date:"21 ก.ค. (อ)", title:"Blue Mountains + Featherdale", tag:"ไฮไลต์",
+    items:[
+      {t:"09:00", a:"ออกเดินทางไป Blue Mountains (เช่ารถ/ทัวร์)", n:"วันนี้ออกเช้าหน่อย ทางไกล ~1.5 ชม."},
+      {t:"10:00", a:"Featherdale Wildlife Park (แวะระหว่างทาง)", n:"อุ้มโคอาล่า ให้อาหารจิงโจ้"},
+      {t:"12:00", a:"Scenic World — รถไฟชัน กระเช้า Three Sisters", n:"มื้อเที่ยงที่ Katoomba"},
+      {t:"15:00", a:"คาเฟ่/ของหวานที่ Leura (เมืองเล็กน่ารัก)", n:"แวะกาแฟ-ขนมก่อนกลับ ร้านเยอะ บรรยากาศดี"},
+      {t:"16:00", a:"เดินทางกลับซิดนีย์", n:""},
+      {t:"19:00", a:"มื้อค่ำใกล้ที่พัก", n:"วันนี้เหนื่อย กินง่ายๆ"}
+    ], note:"วันที่ต้องออกเช้า (ทางไกล) ถ้าไม่ไหวจองทัวร์มีรถรับส่ง สบายกว่า"},
+
+  { day:7, date:"22 ก.ค. (พ)", title:"วันพัก — คาเฟ่ฮิป Surry Hills", tag:"เบา",
+    items:[
+      {t:"10:30", a:"บรันช์: bills (ต้นตำรับ ricotta hotcakes)", n:""},
+      {t:"12:00", a:"Single O + Beta Coffee (กาแฟระดับโลก)", n:"วัยรุ่นฮิต เดินถึงกัน"},
+      {t:"14:00", a:"Bourke Street Bakery", n:"sausage roll ในตำนาน"},
+      {t:"15:30", a:"Paddington Reservoir Gardens (hidden gem)", n:"สวนใต้ดินถ่ายรูปสวย"},
+      {t:"18:00", a:"มื้อค่ำ: AORI (ญี่ปุ่น ⭐4.9 Darling Harbour)", n:"วากิวเด็ด ซาชิมิสด รับเด็กดี วิวอ่าวสวย จองก่อน"}
+    ], note:"หลัง Blue Mountains ให้พักเดินชิลย่านคาเฟ่ ฟื้นแรงเด็ก"},
+
+  { day:8, date:"23 ก.ค. (พฤ)", title:"Bondi Beach + ชายฝั่งตะวันออก", tag:"ปานกลาง",
+    items:[
+      {t:"10:30", a:"Bondi Beach เดินเล่นริมหาด", n:"หน้าหนาวไม่เล่นน้ำ แต่ถ่ายรูปสวย"},
+      {t:"12:30", a:"มื้อเที่ยงคาเฟ่แถว Bondi", n:""},
+      {t:"14:00", a:"Nielsen Park / Shark Beach (hidden gem)", n:"หาดสงบ ปลอดภัยสำหรับเด็ก"},
+      {t:"16:00", a:"Watsons Bay + Hornby Lighthouse", n:"วิวหน้าผา พระอาทิตย์ตก"},
+      {t:"18:00", a:"มื้อค่ำ: Totti's Bondi (อิตาเลียนชื่อดัง)", n:"⭐4.4 Merivale ขนมปังเตาฟืน+เบอร์ราตาในตำนาน อยู่ Bondi Rd ตรงโซน จองก่อน"}
+    ], note:"โซนชายฝั่งตะวันออก แท็กซี่/ขับรถสะดวกกว่า · Totti's Bondi อยู่ Bondi Rd ตรงโซนวันนี้พอดี"},
+
+  { day:9, date:"24 ก.ค. (ศ)", title:"🚗 ไป Port Stephens — แวะ Central Coast", tag:"ไฮไลต์",
+    items:[
+      {t:"08:30", a:"ออกจากซิดนีย์ขับขึ้นเหนือ (ทาง M1)", n:"ออกเช้าหน่อย วันนี้มีจุดแวะหลายที่"},
+      {t:"09:30", a:"Australian Reptile Park (Somersby)", n:"⭐4.6 โชว์ป้อนจระเข้ ไดโนเสาร์ จิงโจ้ เด็กชอบ ถึงก่อน 10:00 ดีสุด"},
+      {t:"12:00", a:"มื้อเที่ยง: Saddles Mount White", n:"⭐4.4 ร้านฟาร์มวิวเขื่อน มีนกแก้ว Macaw บรรยากาศดี"},
+      {t:"14:00", a:"Glenworth Valley — Running of the Horses", n:"โทรเช็ครอบ/เวลาก่อน (02 4375 1222) ฝูงม้า 200 ตัววิ่งกลับคอก"},
+      {t:"16:30", a:"ขับต่อไป Nelson Bay (~1.5 ชม.)", n:""},
+      {t:"18:30", a:"ถึง Port Stephens เช็คอิน + มื้อค่ำ + ไอศกรีมริมอ่าว", n:"Amarna (หรู) หรือ Mantra (คุ้ม 3 ห้องนอน)"}
+    ], note:"⚠️ วันนี้แวะหลายจุด Central Coast (ระหว่างทางพอดี) ถ้าแน่นไปเลือกตัด Glenworth หรือ Reptile Park ออกได้ · Glenworth ต้องเช็ครอบม้าก่อน"},
+
+  { day:10, date:"25 ก.ค. (ส)", title:"🏜️ เนินทราย + Toboggan + สวนสัตว์", tag:"ไฮไลต์",
+    items:[
+      {t:"09:30", a:"Port Stephens 4WD Tours — ขับ 4WD บนเนินทราย + แซนด์บอร์ด", n:"⭐4.7 เด็กชอบสุด!"},
+      {t:"12:00", a:"มื้อเที่ยง + คาเฟ่ Nelson Bay (ร้านริมอ่าวเยอะ)", n:"แวะกาแฟ-ขนมก่อนเที่ยวบ่าย"},
+      {t:"13:30", a:"Oakvale Wildlife Park — อุ้มโคอาล่า ให้อาหารจิงโจ้", n:"⭐4.6 มีสวนน้ำเด็ก"},
+      {t:"15:30", a:"Toboggan Hill Park — รถเลื่อนราง 1 กม. + เขาวงกต", n:"⭐4.2 เสาร์เปิด 10:00-16:00 รีบนิด หรือสลับไปก่อน Oakvale"},
+      {t:"18:30", a:"มื้อค่ำริมอ่าว Nelson Bay", n:""}
+    ], note:"วันเที่ยว Port Stephens เต็มวัน · ถ้าวันแน่นไป เลือก Toboggan หรือ Oakvale อย่างใดอย่างหนึ่ง"},
+
+  { day:11, date:"26 ก.ค. (อา)", title:"🐬 ดูโลมา + กลับซิดนีย์", tag:"ปานกลาง",
+    items:[
+      {t:"10:00", a:"เช็คเอาท์ ฝากกระเป๋า", n:""},
+      {t:"10:30", a:"ล่องเรือดูโลมา (ออกจากมารีน่า ~1.5 ชม.)", n:"Port Stephens มีโลมาตลอดปี โอกาสเห็นสูง"},
+      {t:"12:30", a:"มื้อเที่ยงอำลา Nelson Bay", n:""},
+      {t:"14:00", a:"ขับกลับซิดนีย์ (~2.5 ชม.) แวะคาเฟ่ระหว่างทาง", n:""},
+      {t:"18:00", a:"มื้อค่ำในเมือง + ของหวานร้านใกล้ที่พัก", n:"เลือกร้านขนม/ไอศกรีมแถวที่พักได้ตามใจ"}
+    ], note:"ดูโลมาเช้าวันสุดท้ายของ Port Stephens แล้วค่อยขับกลับ ไม่ต้องรีบ"},
+
+  { day:12, date:"27 ก.ค. (จ)", title:"Manly — นั่งเฟอร์รี่ข้ามอ่าว", tag:"ปานกลาง",
+    items:[
+      {t:"10:30", a:"นั่งเฟอร์รี่ Circular Quay → Manly (30 นาที)", n:"วิวสวยที่สุด เด็กชอบ"},
+      {t:"11:30", a:"Manly Beach + ถนน The Corso", n:"เดินเล่น กินของ"},
+      {t:"13:00", a:"มื้อเที่ยง: Manly Seafoods", n:"ฟิชแอนด์ชิปส์ริมหาด"},
+      {t:"14:30", a:"คาเฟ่/ของหวานที่ Manly + เดิน Spit to Manly สั้นๆ", n:"ร้านริมหาดเยอะ เดินเล่นชิล"},
+      {t:"16:30", a:"นั่งเฟอร์รี่กลับ", n:""},
+      {t:"18:30", a:"มื้อค่ำ: Primi Italian (CBD)", n:"พิซซ่า พาสต้า เด็กกินง่าย"}
+    ], note:"วันสายทะเล นั่งเรือสนุก ไม่เหนื่อยมาก"},
+
+  { day:13, date:"28 ก.ค. (อ)", title:"คาเฟ่สวน + Luna Park + เก็บของ", tag:"เบา",
+    items:[
+      {t:"10:30", a:"คาเฟ่: The Grounds of Alexandria", n:"คาเฟ่สวนสวย ถ่ายรูปดี มีฟาร์มสัตว์เล็ก เด็กชอบ"},
+      {t:"12:00", a:"มื้อเที่ยงที่ The Grounds + เดินเล่น", n:""},
+      {t:"14:00", a:"Luna Park (สวนสนุกริมน้ำใต้สะพาน)", n:"เข้าฟรี จ่ายเครื่องเล่น · เก็บตกร้านที่อยากไป"},
+      {t:"16:00", a:"ช้อปปิ้งของฝากรอบสุดท้าย + เก็บกระเป๋า", n:""},
+      {t:"18:30", a:"มื้อค่ำอำลาซิดนีย์: Sydney Fish Market", n:"ซีฟู้ดสดๆ ปิดทริปสวยๆ"}
+    ], note:"29 ก.ค. เที่ยวบินกลับ 13:00 — ต้องถึงสนามบิน ~10:30 (เผื่อเวลา)"}
+];</script>
+<script>const TRIP = {
   title: "ทริปครอบครัวซิดนีย์",
   subtitle: "16–29 กรกฎาคม 2026 · 6 คน (เด็ก 5 & 9 ขวบ + พ่อแม่ + ผู้ใหญ่)",
   note: "หน้าหนาวซิดนีย์ ~8–17°C · กลางวันแดดออก เช้า-เย็นหนาว · เตรียมเสื้อแจ็คเก็ต/เสื้อกันลม",
@@ -126,6 +273,11 @@ const TRIP = {
           photos: "https://www.google.com/search?tbm=isch&q=Royal%20Botanic%20Garden%20Sydney",
           wiki: "Royal Botanic Garden, Sydney",
           lat: -33.8641859, lng: 151.2165708 },
+        { name: "🚤 GoBoat — เรือปิกนิกไฟฟ้าขับเอง", rating: 4.9, hours: "10:00-17:30 · จองล่วงหน้า",
+          desc: "เรือไฟฟ้าขับเอง ไม่ต้องมีใบขับขี่! นั่งได้ถึง 8 คน มีโต๊ะปิกนิกไม้ หลังคากันแดด เอาอาหารขึ้นเรือเอง ขับชมวิวอ่าวซิดนีย์ จอดอ่าวเงียบๆ ปิกนิกได้ · ออกจาก The Spit (Mosman) เริ่ม ~$80/ชม. คนขับต้อง 18+ เด็กใส่ชูชีพ จองก่อน",
+          maps: "https://www.google.com/maps/search/?api=1&query=GoBoat%20Sydney%20The%20Spit&query_place_id=ChIJh2PSl3erEmsRXGmBm8t7ZTM",
+          photos: "https://www.google.com/search?tbm=isch&q=GoBoat%20Sydney%20electric%20picnic%20boat",
+          lat: -33.8044076, lng: 151.2455157 },
         { name: "Darling Harbour", rating: 4.7, hours: "เปิดตลอด",
           desc: "ย่านริมน้ำ มีร้านอาหาร คาเฟ่ และแหล่งเที่ยวเด็กรวมกันหลายที่ (เดินถึงกันหมด) เหมาะเป็นฐานเที่ยว 1 วันเต็ม",
           maps: "https://www.google.com/maps/search/?api=1&query=Darling%20Harbour&query_place_id=ChIJt9trB0euEmsR8NbepO14j3M",
@@ -289,6 +441,88 @@ const TRIP = {
       ]
     },
     {
+      id: "whale",
+      icon: "🐋",
+      name: "ดูปลาวาฬ (ก.ค. = พีคซีซั่น! โอกาสเจอ 95%+)",
+      places: [
+        { name: "🐋 Go Whale Watching (Darling Harbour)", rating: 4.9, hours: "เรือ 3 ชม. · ออกทุกวัน",
+          desc: "เรตติ้งสูงสุด 4.9! เรือใหม่ Whale Dreamer ออกจาก Darling Harbour ล่อง 3 ชม. ออกทะเลเปิด ชมวิว 360 องศา ลูกเรือเชี่ยวชาญ เหมาะครอบครัว · เด็กอาจเมาเรือ มีถุง+ยาแจก แนะนำทานยาแก้เมาก่อนขึ้น",
+          maps: "https://www.google.com/maps/search/?api=1&query=Go%20Whale%20Watching%20Sydney&query_place_id=ChIJH-QJATKwEmsRriGlKhmXYtg",
+          photos: "https://www.google.com/search?tbm=isch&q=Go%20Whale%20Watching%20Sydney",
+          lat: -33.8678696, lng: 151.2012133 },
+        { name: "🐋 Captain Cook Cruises (Circular Quay)", rating: 4.4, hours: "เรือ 2.5-3 ชม. · ออกทุกวัน",
+          desc: "ผู้ให้บริการเก่าแก่สุดของซิดนีย์ เรือ catamaran มีทั้งโซนในร่มและกลางแจ้ง มีนักธรรมชาติวิทยาบรรยายตลอด อัตราเจอปลาวาฬ 95%+ ไม่เจอนั่งฟรีรอบหน้า · ออกจาก Circular Quay สะดวก เด็กเล็กเหมาะ (มีในร่ม)",
+          maps: "https://www.google.com/maps/search/?api=1&query=Captain%20Cook%20Cruises%20Circular%20Quay&query_place_id=ChIJO__3nEKuEmsRkhbeuGF-zjo",
+          photos: "https://www.google.com/search?tbm=isch&q=Captain%20Cook%20Cruises%20whale%20watching%20Sydney",
+          lat: -33.8610486, lng: 151.2099437 },
+        { name: "Cape Solander (จุดชมวิวฟรีบนหน้าผา)", rating: 4.8, hours: "7:00-19:30 · จอดรถ $8",
+          desc: "จุดดูปลาวาฬจากบนหน้าผาแบบฟรี! ไม่ต้องขึ้นเรือ (ดีถ้ากลัวเมาเรือ) มีแพลตฟอร์มชมวิว ก.ค.เห็นปลาวาฬหลายตัวต่อวัน อยู่ในอุทยาน Kamay Botany Bay ทางใต้ ~45 นาทีจากเมือง · ลมแรงมาก ใส่เสื้อกันลม ระวังงู",
+          maps: "https://www.google.com/maps/search/?api=1&query=Cape%20Solander&query_place_id=ChIJncYAXoC2EmsRzXUShiOWRUE",
+          photos: "https://www.google.com/search?tbm=isch&q=Cape%20Solander%20whale%20watching",
+          lat: -34.0170707, lng: 151.2308465 }
+      ]
+    },
+    {
+      id: "portstephens",
+      icon: "🏖️",
+      name: "Port Stephens (ทริปค้าง 2 คืน)",
+      places: [
+        { name: "Walkabout Wildlife Sanctuary (แวะระหว่างทาง)", rating: 4.5, hours: "9:30-17:00 (อ. ถึง 16:00) · ทุกวัน",
+          desc: "จุดแวะระหว่างทางซิดนีย์→Port Stephens (Calga ~1 ชม.จากซิดนีย์ บนทาง M1) สถานที่อนุรักษ์สัตว์พื้นเมือง จิงโจ้ วอลลาบี อีมู เดินเพ่นพ่านอิสระให้ลูบได้ มีช่วงให้อาหาร 13:00 มี Tasmanian devil วอมแบท เส้นทางเดินป่า บรรยากาศธรรมชาติ เด็กได้ใกล้ชิดสัตว์",
+          maps: "https://www.google.com/maps/search/?api=1&query=Walkabout%20Wildlife%20Sanctuary&query_place_id=ChIJs7Ie-uVJDWsRFtJ1dRXVaQs",
+          photos: "https://www.google.com/search?tbm=isch&q=Walkabout%20Wildlife%20Sanctuary%20Calga%20kangaroo",
+          lat: -33.4236801, lng: 151.2234297 },
+        { name: "Saddles Mount White (มื้อเที่ยงระหว่างทาง)", rating: 4.4, hours: "8:00-17:00 · ทุกวัน",
+          desc: "ร้านอาหารบรรยากาศฟาร์ม วิวสวยริมเขื่อน มีนกแก้ว Macaw หลากสีในร้าน มีเส้นทางเดินเล่นรอบเขื่อน อาหารพอร์ชั่นใหญ่ บรรยากาศดีมาก เหมาะแวะมื้อเที่ยงระหว่างทาง (Mount White) · ราคาระดับกลาง-สูง",
+          maps: "https://www.google.com/maps/search/?api=1&query=Saddles%20Mount%20White&query_place_id=ChIJDQrP6CBJDWsRxIOTCYm98M4",
+          photos: "https://www.google.com/search?tbm=isch&q=Saddles%20Mount%20White%20restaurant",
+          lat: -33.4528683, lng: 151.195381 },
+        { name: "Australian Reptile Park (แวะระหว่างทาง)", rating: 4.6, hours: "9:00-17:00 · ทุกวัน",
+          desc: "สวนสัตว์เลื้อยคลานชื่อดัง รีวิวเกือบ 8,000! โชว์ป้อนจระเข้ งู แมงมุม โคอาล่า จิงโจ้ให้ลูบ มีโซนไดโนเสาร์ สนามเด็กเล่น โชว์สนุกหลายรอบ (Somersby) แนะนำถึงก่อน 10:00 · เด็กชอบมาก",
+          maps: "https://www.google.com/maps/search/?api=1&query=Australian%20Reptile%20Park&query_place_id=ChIJF3lCR35KDWsRGyEtDOdzb9Y",
+          photos: "https://www.google.com/search?tbm=isch&q=Australian%20Reptile%20Park%20crocodile",
+          wiki: "Australian Reptile Park",
+          lat: -33.4184972, lng: 151.2780355 },
+        { name: "Glenworth Valley (Running of the Horses)", rating: 4.6, hours: "8:30-17:30 · เช็ครอบม้ากับร้านก่อน!",
+          desc: "ศูนย์ขี่ม้า/quad bike/คายัค ใหญ่ที่สุดในออสเตรเลีย 3,000 เอเคอร์ ม้ากว่า 200 ตัว ไฮไลต์ Running of the Horses ฝูงม้าวิ่งกลับคอกผ่านหุบเขา สวยและทรงพลังมาก · ต้องโทรเช็ครอบ/เวลากับร้านก่อน (02 4375 1222)",
+          maps: "https://www.google.com/maps/search/?api=1&query=Glenworth%20Valley%20Wilderness%20Adventures&query_place_id=ChIJ5V-W-dFJDWsRlJLQsGf4hN8",
+          photos: "https://www.google.com/search?tbm=isch&q=Glenworth%20Valley%20running%20of%20the%20horses",
+          lat: -33.4034701, lng: 151.1929592 },
+        { name: "Port Stephens 4WD Tours", rating: 4.7, hours: "9:30-15:30 · ทุกวัน",
+          desc: "ขับรถ 4WD บนเนินทรายยักษ์ Stockton Bight + เล่นแซนด์บอร์ดไถลลงเนิน เด็กชอบสุดๆ ลูกเรือใจดีสอนมือใหม่ มีน้ำแจก · ทะเลทรายกลางเมือง ตื่นตามาก",
+          maps: "https://www.google.com/maps/search/?api=1&query=Port%20Stephens%204WD%20Tours&query_place_id=ChIJY0mguN2Dc2sRMaiUA1hbdcY",
+          photos: "https://www.google.com/search?tbm=isch&q=Port%20Stephens%20sand%20dunes%20sandboarding",
+          wiki: "Stockton Bight Sand Dunes",
+          lat: -32.7823736, lng: 152.0741224 },
+        { name: "Oakvale Wildlife Park", rating: 4.6, hours: "10:00-17:00 · ทุกวัน",
+          desc: "สวนสัตว์ให้อุ้มโคอาล่า ป้อนนมแกะ/แพะ ให้อาหารจิงโจ้ใกล้ชิด มีสวนน้ำ (splash park) สัตว์เยอะหลากหลาย รีวิวบอกสัตว์เป็นมิตร เหมาะเด็กเล็กมาก",
+          maps: "https://www.google.com/maps/search/?api=1&query=Oakvale%20Wildlife%20Park&query_place_id=ChIJQ9TOb7dxc2sRNZGbXWc7XmI",
+          photos: "https://www.google.com/search?tbm=isch&q=Oakvale%20Wildlife%20Park%20koala",
+          lat: -32.7944544, lng: 151.9111651 },
+        { name: "Toboggan Hill Park", rating: 4.2, hours: "พ-ศ 10:00-15:00 · ส-อา 10:00-16:00 (ปิด จ-อ)",
+          desc: "สวนสนุกครอบครัว ไฮไลต์คือรถเลื่อนราง (toboggan) ยาว 1 กม. ลอดป่า คุมความเร็วเองได้ สนุกทั้งเด็กและผู้ใหญ่ มีเขาวงกตยักษ์ มินิกอล์ฟ ปีนผา โรลเลอร์สเกต (มีในร่มเผื่อฝนตก) · ราคาต่อรอบสูงหน่อย แนะนำซื้อแพ็กหลายกิจกรรม",
+          maps: "https://www.google.com/maps/search/?api=1&query=Toboggan%20Hill%20Park&query_place_id=ChIJu3bSvkuCc2sR4PDy-Wh9AQ8",
+          photos: "https://www.google.com/search?tbm=isch&q=Toboggan%20Hill%20Park%20Nelson%20Bay",
+          lat: -32.7371216, lng: 152.1149893 },
+        { name: "ล่องเรือดูโลมา (Nelson Bay Marina)", rating: 4.5, hours: "เรือ ~1.5 ชม. · ออกจากมารีน่า",
+          desc: "Port Stephens มีโลมาอาศัยอยู่ตลอดปี ~150 ตัว โอกาสเห็นสูงมาก เรือออกจาก d'Albora Marina หลายรอบต่อวัน บางลำมีตาข่ายให้เด็กนั่งหน้าเรือ · ก.ค.อาจเจอปลาวาฬด้วย",
+          maps: "https://www.google.com/maps/search/?api=1&query=Nelson%20Bay%20Marina%20dolphin%20cruise",
+          photos: "https://www.google.com/search?tbm=isch&q=Port%20Stephens%20dolphin%20watching%20cruise",
+          wiki: "Port Stephens (New South Wales)",
+          lat: -32.7186594, lng: 152.1477255 },
+        { name: "Amarna Luxury Beach Resort (ที่พัก·หรู)", rating: 4.7, hours: "~$430-630/คืน · 5 ดาว",
+          desc: "รีสอร์ตหรูริมหาด มีสระทำความร้อน 25 ม. บางห้องมีสระ/สปาส่วนตัว เดินถึงหาด รีวิวบอกเห็นโลมาจากระเบียง · รับไม่เกิน 10 คน เหมาะ 6 คนพอดี · ราคา AUD",
+          maps: "https://www.google.com/maps/search/?api=1&query=Amarna%20Luxury%20Beach%20Resort%20Nelson%20Bay&query_place_id=ChIJaYhBidmDc2sRn0geJ7sLBfc",
+          photos: "https://www.google.com/search?tbm=isch&q=Amarna%20Luxury%20Beach%20Resort%20Nelson%20Bay",
+          lat: -32.7199401, lng: 152.1356811 },
+        { name: "Mantra Nelson Bay (ที่พัก·คุ้ม)", rating: 4.1, hours: "~$230-380/คืน · 4 ดาว",
+          desc: "อพาร์ตเมนต์ 2-3 ห้องนอน + เพนต์เฮาส์ พื้นที่กว้าง ครัวครบ สระ lagoon น้ำตก โซนน้ำเด็ก บาร์บีคิว ทำเลใจกลางเมือง เดินถึงร้านอาหาร · ห้อง 3 ห้องนอนเหมาะ 6 คน คุ้มกว่า · ราคา AUD",
+          maps: "https://www.google.com/maps/search/?api=1&query=Mantra%20Nelson%20Bay&query_place_id=ChIJka4PW-eDc2sRmukLrmECmcc",
+          photos: "https://www.google.com/search?tbm=isch&q=Mantra%20Nelson%20Bay%20apartment",
+          lat: -32.7240489, lng: 152.145432 }
+      ]
+    },
+    {
       id: "daytrips",
       icon: "🚗",
       name: "ทริปนอกเมือง (Day Trips)",
@@ -341,6 +575,36 @@ const TRIP = {
           maps: "https://www.google.com/maps/search/?api=1&query=Primi%20Italian%20Sydney&query_place_id=ChIJs3cv0KuvEmsRHcXYwNJ6GU0",
           photos: "https://www.google.com/search?tbm=isch&q=Primi%20Italian%20Sydney",
           lat: -33.8701437, lng: 151.2056158 },
+        { name: "Blackbird Cafe (Darling Harbour)", rating: 4.1, hours: "8:00-21:30 · ทุกวัน",
+          desc: "ร้านวิวอ่าว Darling Harbour ชั้น 2 บรรยากาศดีโดยเฉพาะตอนเย็น เมนูหลากหลาย สเต๊ก พิซซ่า พาสต้า เนื้อจิงโจ้ เด็กมีเมนูพิซซ่า+ไอศกรีม ราคาคุ้ม",
+          maps: "https://www.google.com/maps/search/?api=1&query=Blackbird%20Cafe%20Darling%20Harbour&query_place_id=ChIJB99QujiuEmsRxWtAQpPHraE",
+          photos: "https://www.google.com/search?tbm=isch&q=Blackbird%20Cafe%20Darling%20Harbour",
+          lat: -33.8721453, lng: 151.2021640 },
+        { name: "Fratelli Fresh (Darling Harbour)", rating: 4.2, hours: "12:00-22:00 · ทุกวัน",
+          desc: "อิตาเลียนยอดนิยม พิซซ่าเตาฟืนเปลือกกรอบ พาสต้า ทีรามิสุอร่อย เหมาะกลุ่มใหญ่ เด็กกินง่าย ทำเลใกล้ ICC/Darling Harbour",
+          maps: "https://www.google.com/maps/search/?api=1&query=Fratelli%20Fresh%20Darling%20Harbour&query_place_id=ChIJpXvV2tWvEmsRJ34mLMp4ZQI",
+          photos: "https://www.google.com/search?tbm=isch&q=Fratelli%20Fresh%20pizza%20pasta",
+          lat: -33.8767254, lng: 151.2011516 },
+        { name: "Ho Jiak Town Hall (มาเลย์)", rating: 4.7, hours: "11:30-22:00 · ทุกวัน",
+          desc: "อาหารมาเลย์ระดับท็อปของซิดนีย์ laksa, char kway teow, สะเต๊ะ, เป็ดย่าง รสจัดจ้าน บรรยากาศ hawker สนุก ใกล้ Town Hall/QVB เหมาะกลุ่ม จองล่วงหน้าดี",
+          maps: "https://www.google.com/maps/search/?api=1&query=Ho%20Jiak%20Town%20Hall&query_place_id=ChIJo3Z1GcCvEmsRAFnrNe37zms",
+          photos: "https://www.google.com/search?tbm=isch&q=Ho%20Jiak%20Town%20Hall%20Malaysian",
+          lat: -33.8717263, lng: 151.2063255 },
+        { name: "Totti's Bondi (อิตาเลียน)", rating: 4.4, hours: "12:00-22:00 (ศ-ส ถึง 23:00) · ทุกวัน",
+          desc: "อิตาเลียนชื่อดังเครือ Merivale ขนมปังเตาฟืน + เบอร์ราตา + มะเขือเทศ ในตำนาน ต้องสั่ง! พาสต้าปู ragu อร่อย บรรยากาศคอร์ทยาร์ดต้นไม้สวย (Bondi Rd) · จองล่วงหน้า คนเยอะ",
+          maps: "https://www.google.com/maps/search/?api=1&query=Totti's%20Bondi&query_place_id=ChIJFY04IkatEmsRWkTe5CeoRug",
+          photos: "https://www.google.com/search?tbm=isch&q=Totti's%20Bondi%20restaurant",
+          lat: -33.8948987, lng: 151.2687898 },
+        { name: "Bornga Korean BBQ (Haymarket)", rating: 4.7, hours: "16:00-22:30 (ส-อา จาก 11:30) · ทุกวัน",
+          desc: "ปิ้งย่างเกาหลีของเชฟดัง Paik Jong-won ⭐4.7 รีวิว 3,800+ เนื้อวากิวมาร์เบิลสวย ละลายในปาก เครื่องเคียงรีฟิลฟรี บรรยากาศเหมือนเกาหลีแท้ ใกล้ Paddy's/Darling Harbour · จันทร์-พฤหัสเปิด 16:00",
+          maps: "https://www.google.com/maps/search/?api=1&query=Bornga%20Korean%20BBQ%20Haymarket&query_place_id=ChIJdRbCpRmvEmsRpnBSWgy3ELA",
+          photos: "https://www.google.com/search?tbm=isch&q=Bornga%20Korean%20BBQ%20Sydney",
+          lat: -33.8788324, lng: 151.2035179 },
+        { name: "AORI (ญี่ปุ่น)", rating: 4.9, hours: "อ-อา 12:00-15:00, 17:00-22:00 (ปิดจันทร์)",
+          desc: "ญี่ปุ่นเรตติ้งสูงสุด ⭐4.9 วิว Darling Harbour วากิวที่ดีที่สุดที่เคยกิน ซาชิมิสด แซลมอน/ทูน่า บรรยากาศหรูแต่ราคาคุ้ม รับเด็กดี (มีรีวิวพาลูก 3-10 ขวบ) · ปิดวันจันทร์ จองก่อน",
+          maps: "https://www.google.com/maps/search/?api=1&query=AORI%20Restaurant%20Lime%20St&query_place_id=ChIJ7WMNlzevEmsRxDoAK6j4zv8",
+          photos: "https://www.google.com/search?tbm=isch&q=AORI%20Restaurant%20Sydney%20wagyu",
+          lat: -33.867806, lng: 151.2017201 },
         { name: "Roast Republic (CBD)", rating: 4.7, hours: "11:30–22:00",
           desc: "สเต๊กเฮาส์ พอร์ชั่นใหญ่ มีรีวิวกลุ่ม 6 คนแล้วประทับใจ เหมาะมื้อค่ำครอบครัว",
           maps: "https://www.google.com/maps/search/?api=1&query=Roast%20Republic%20Sydney&query_place_id=ChIJr41R2-6vEmsRGcCdgUYh9a4",
@@ -471,6 +735,21 @@ const TRIP = {
           maps: "https://www.google.com/maps/search/?api=1&query=Single%20O%20Surry%20Hills&query_place_id=ChIJNUOUhSKuEmsRj2F2Arcx_OQ",
           photos: "https://www.google.com/search?tbm=isch&q=Single%20O%20Surry%20Hills",
           lat: -33.8810973, lng: 151.2096465 },
+        { name: "The Grounds of Alexandria", rating: 4.0, hours: "7:30-21:00 · ทุกวัน",
+          desc: "คาเฟ่ในตำนานของซิดนีย์ บรรยากาศสวนสวยมาก มีธีมตกแต่งเปลี่ยนตามฤดู ถ่ายรูปสวยทุกมุม มีฟาร์มสัตว์เล็กให้เด็กดู กาแฟดี เค้กธีมน่ารัก เหมาะครอบครัว (Alexandria)",
+          maps: "https://www.google.com/maps/search/?api=1&query=The%20Grounds%20of%20Alexandria&query_place_id=ChIJFbIJpLaxEmsRSrzMZif-DK8",
+          photos: "https://www.google.com/search?tbm=isch&q=The%20Grounds%20of%20Alexandria%20cafe",
+          lat: -33.9106777, lng: 151.1941376 },
+        { name: "Brewtown Newtown", rating: 4.1, hours: "8:00-16:00 · ทุกวัน",
+          desc: "คาเฟ่ดังย่าน Newtown หนึ่งในร้านแรกๆ ของออสเตรเลียที่ทำ cronut (ครัวซองต์+โดนัท) คั่วกาแฟเอง บรรยากาศชิล เพสตรีเด็ด เด็กชอบโดนัท",
+          maps: "https://www.google.com/maps/search/?api=1&query=Brewtown%20Newtown&query_place_id=ChIJExZmFTKwEmsReP_uIMPdOOI",
+          photos: "https://www.google.com/search?tbm=isch&q=Brewtown%20Newtown%20cronut",
+          lat: -33.8939016, lng: 151.1823852 },
+        { name: "Devon Cafe (Surry Hills)", rating: 4.1, hours: "เช็คเวลา · ทุกวัน",
+          desc: "คาเฟ่ฟิวชั่นญี่ปุ่น-ตะวันตก เมนูสร้างสรรค์ truffle brunch, kaya toast, omurice มัทฉะชีสเค้ก บรรยากาศสวนหลังบ้านน่ารัก เหมาะมื้อสาย (Surry Hills)",
+          maps: "https://www.google.com/maps/search/?api=1&query=Devon%20Cafe%20Surry%20Hills&query_place_id=ChIJXbrrriGuEmsRuXUCNu7cfGI",
+          photos: "https://www.google.com/search?tbm=isch&q=Devon%20Cafe%20Surry%20Hills%20food",
+          lat: -33.8859637, lng: 151.2077008 },
         { name: "Edition Roasters (Darling Square)", rating: 4.3, hours: "เปิดทุกวัน · ร้านสวย",
           desc: "ผสมสไตล์ญี่ปุ่นกับสแกนดิเนเวียน โทนถ่าน มีโซนนั่งพื้นจม หนึ่งในคาเฟ่ที่สวยที่สุดในซิดนีย์ สายถ่ายรูปต้องชอบ มัทฉะ+ซูเฟล่แพนเค้กดัง ใกล้ Darling Harbour",
           maps: "https://www.google.com/maps/search/?api=1&query=Edition%20Roasters%20Darling%20Square&query_place_id=ChIJJeRjRtmvEmsRvku-OhXBVAI",
@@ -479,8 +758,7 @@ const TRIP = {
       ]
     }
   ]
-};
-</script>
+};</script>
 <script>
   const nav=document.getElementById('nav'),content=document.getElementById('content');
   let total=0; const allMarkers=[];
@@ -515,22 +793,44 @@ const TRIP = {
   document.getElementById('total').textContent=total;
 
 
+
+  // ── render แผน 13 วัน ──
+  const planbox=document.getElementById('planbox');
+  PLAN.forEach(d=>{
+    const div=document.createElement('div');div.className='day';
+    div.innerHTML=`<div class="day-head">
+      <div class="day-num">${d.day}</div>
+      <div class="day-title">${d.title}<div class="day-date">${d.date}</div></div>
+      <div class="day-tag ${d.tag}">${d.tag}</div></div>
+      <div class="day-body">
+        ${d.items.map(i=>`<div class="item"><div class="item-t">${i.t}</div>
+          <div><div class="item-a">${i.a}</div>${i.n?`<div class="item-n">${i.n}</div>`:''}</div></div>`).join('')}
+        ${d.note?`<div class="day-note">💡 ${d.note}</div>`:''}
+      </div>`;
+    planbox.appendChild(div);
+  });
+  // สลับแท็บ
+  document.querySelectorAll('.tab').forEach(t=>{
+    t.addEventListener('click',()=>{
+      document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+      t.classList.add('active');
+      const v=t.dataset.view;
+      document.getElementById('view-plan').classList.toggle('active',v==='plan');
+      document.getElementById('view-explore').classList.toggle('active',v==='explore');
+      if(v==='explore'&&window._map)setTimeout(()=>window._map.invalidateSize(),100);
+    });
+  });
+
   // ── ดึงรูปจาก Wikipedia REST API (ทำงานบน browser ของผู้เปิดเว็บ) ──
   async function loadImg(slot){
     const wiki = slot.dataset.wiki, photos = slot.dataset.photos;
     const fb = `<a class="c-imgfallback" href="${photos}" target="_blank" rel="noopener"><span>🖼️</span><b>กดดูรูปใน Google</b></a>`;
     if(!wiki){ slot.innerHTML = fb; return; }
-    // ใช้ MediaWiki API พร้อม origin=* (รองรับ CORS เรียกจากเว็บอื่นได้)
-    const api = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*'
-      + '&prop=pageimages&piprop=thumbnail&pithumbsize=600&redirects=1&titles='
-      + encodeURIComponent(wiki);
     try{
-      const r = await fetch(api);
-      if(!r.ok) throw 0;
-      const d = await r.json();
-      const pages = d.query && d.query.pages;
-      let src = null;
-      if(pages){ for(const k in pages){ if(pages[k].thumbnail){ src = pages[k].thumbnail.source; break; } } }
+      const api='https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=600&redirects=1&titles='+encodeURIComponent(wiki);
+      const r=await fetch(api); if(!r.ok) throw 0;
+      const d=await r.json(); const pages=d.query&&d.query.pages; let src=null;
+      if(pages){for(const k in pages){if(pages[k].thumbnail){src=pages[k].thumbnail.source;break;}}}
       if(!src) throw 0;
       const img = new Image();
       img.className='c-img'; img.alt=wiki; img.referrerPolicy='no-referrer';
@@ -539,38 +839,20 @@ const TRIP = {
       img.src = src;
     }catch(e){ slot.innerHTML = fb; }
   }
-  // โหลดทีละน้อยกันยิงพร้อมกัน 37 จุด
-  const slots = [...document.querySelectorAll('.c-imgslot')];
-  (async()=>{ for(const s of slots){ loadImg(s); await new Promise(r=>setTimeout(r,120)); } })();
+  document.querySelectorAll('.c-imgslot').forEach(loadImg);
 
-  // แผนที่ Leaflet รวมทุกหมุด
-  const map=L.map('bigmap').setView([-33.87,151.21],11);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-    maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
-  const grp=[];
-  allMarkers.forEach(m=>{
-    const mk=L.marker([m.lat,m.lng]).addTo(map);
-    mk.bindPopup(`<b>${m.icon} ${m.name}</b><br><a href="${m.maps}" target="_blank" rel="noopener">📍 เปิด Google Maps</a>`);
-    grp.push([m.lat,m.lng]);
-  });
-  if(grp.length)map.fitBounds(grp,{padding:[40,40]});
-
-  // ── ตัวช่วยดีบั๊ก: ทดสอบว่า Wikipedia API เรียกได้ไหม ──
-  document.getElementById('diagbtn').addEventListener('click', async (e)=>{
-    e.preventDefault();
-    const out = document.getElementById('diag');
-    out.textContent = '⏳ กำลังทดสอบเรียก Wikipedia...';
-    try{
-      const r = await fetch('https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=400&titles=Sydney_Opera_House');
-      if(!r.ok){ out.innerHTML='❌ เรียก API ไม่ได้ (HTTP '+r.status+') — เน็ตอาจบล็อก Wikipedia'; return; }
-      const d = await r.json();
-      const p = d.query.pages;
-      let src=null; for(const k in p){ if(p[k].thumbnail) src=p[k].thumbnail.source; }
-      if(src){ out.innerHTML='✅ Wikipedia ใช้ได้! รูปควรขึ้นปกติ ลอง refresh หน้า<br><img src="'+src+'" style="height:60px;border-radius:6px;margin-top:4px">'; }
-      else { out.innerHTML='⚠️ เรียก API ได้ แต่ไม่พบรูป (โครงสร้างข้อมูลอาจเปลี่ยน)'; }
-    }catch(err){ out.innerHTML='❌ ถูกบล็อก (CORS/เน็ต): '+err.message+'<br>เน็ตที่ใช้อาจบล็อก Wikipedia ลองเปลี่ยนเน็ต/ปิด VPN'; }
-  });
-
+  try{
+    if(typeof L === 'undefined'){
+      const mw=document.querySelector('.mapwrap'); if(mw) mw.style.display='none';
+      const mc=document.querySelector('.map-cap'); if(mc) mc.innerHTML='🗺️ แผนที่โหลดไม่ได้ — กดปุ่ม 📍 ในแต่ละจุด';
+    } else {
+      const map=window._map=L.map('bigmap').setView([-33.87,151.21],11);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
+      const grp=[];
+      allMarkers.forEach(m=>{const mk=L.marker([m.lat,m.lng]).addTo(map);mk.bindPopup(`<b>${m.icon} ${m.name}</b><br><a href="${m.maps}" target="_blank" rel="noopener">📍 เปิด Google Maps</a>`);grp.push([m.lat,m.lng]);});
+      if(grp.length)map.fitBounds(grp,{padding:[40,40]});
+    }
+  }catch(e){const mw=document.querySelector('.mapwrap');if(mw)mw.style.display='none';}
 </script>
 </body>
 </html>
